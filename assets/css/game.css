@@ -3,6 +3,15 @@
   float:left;
 }
 
+.main_container{
+  transition: all .3s;
+}
+
+.options{
+  position: absolute;
+  width:100%;
+}
+
 .enemy_options{
   top:0%;
   width:50%;

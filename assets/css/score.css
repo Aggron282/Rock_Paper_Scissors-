@@ -1,0 +1,35 @@
+.scoreboard{
+  width:100%;
+  position: relative;
+  margin-top:-20%;
+  z-index:99;
+}
+
+.board{
+  position: absolute;
+  width:50%;
+  top:0%;
+}
+
+.board p{
+  font-family: monospace;
+  color:white;
+  text-align: center;
+}
+
+.board .subtitle{
+  font-size:20px;
+}
+
+.player_board{
+  left:-15%;
+}
+
+.enemy_board{
+  right:-15%;
+}
+
+
+.board .title{
+  font-size:25px;
+}

@@ -1,0 +1,65 @@
+.result_background--active{
+  height:100vh;
+  animation: .3s ease-in result_background 1;
+}
+
+.winner-choice img{
+  transform:scale(1.5);
+}
+
+
+.result_background{
+  width:100%;
+  background:black;
+  opacity:.5;
+  transition: .5s all;
+  z-index:2;
+  position: absolute;
+  left:0%;
+  top:0%;
+}
+
+.lose{
+  color:orangered !important
+}
+
+.won{
+  color:cornflowerblue !important
+}
+
+.result{
+  font-size:50px;
+  font-family: monospace;
+  text-align:center;
+  color:white;
+  top:200px;
+  width:100%;
+  animation: result infinite 1s ease-in;
+  left:-5px;
+  font-weight: 800;
+  position: absolute;
+  z-index:99;
+}
+
+.vs_line{
+  transform: rotate(30deg);
+  height:3px;
+  background:white;
+  width:0%;
+  position: absolute;
+  left:-15%;
+  top:155%;
+  transition: all .5s;
+}
+
+.score_active--enemy{
+  animation:score_enemy 1s  ease-in 3;
+}
+
+.score_active--player{
+  animation:score_player 1s  ease-in 3;
+}
+
+.vs_line--active{
+  width:300%;
+}
