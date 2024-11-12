@@ -1,7 +1,7 @@
 var start_container = document.querySelector(".start_container");
 var start_btn = document.querySelector(".start_btn");
 var main_container = document.querySelector(".main_container");
-var quit_btn = document.querySelector(".quit_btn");
+
 var watermark_container = document.querySelector(".watermark_container");
 
 var isPlaying = false;
@@ -9,11 +9,6 @@ var isPlaying = false;
 start_btn.addEventListener("click",(e)=>{
   isPlaying = true;
   StartGame();
-});
-
-quit_btn.addEventListener("click",(e)=>{
-  isPlaying = false;
-  ToggleScreens();
 });
 
 const ToggleScreens = () =>{

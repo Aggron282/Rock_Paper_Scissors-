@@ -68,7 +68,7 @@ const HighlightElement = (element,highlight,active_class) => {
 
 }
 
-function SetScoreText(isPlayer){
+async function SetScoreText(isPlayer){
 
   var id_root = "_score";
   var who = isPlayer ? "player" : "enemy";
@@ -81,5 +81,7 @@ function SetScoreText(isPlayer){
 
   score_text.classList.add("score_active--"+who);
   score_text.innerHTML = score.toString();
+  await Delay(3000);
+  score_text.classList.remove("score_active--"+who);
 
 }

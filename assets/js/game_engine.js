@@ -50,8 +50,9 @@ const SelectChoice = (element) => {
 const RandomizeEnemyChoice = () =>{
 
   var choices_for_enemy = enemy_options.querySelectorAll(".choice_container");
-  var random_index = Math.floor(0,choices_for_enemy.length);
-  var enemy_choice_element = choices_for_enemy[random_index];
+  var index = Math.floor(Math.random() * choices_for_enemy.length);
+  console.log(index)
+  var enemy_choice_element = choices_for_enemy[index];
   var enemy_id = enemy_choice_element.getAttribute("_id");
   var enemy_choice = FindChoice(enemy_id);
 
@@ -74,10 +75,15 @@ const AddEventsToPlayerChoice = () => {
         var element = e.target.parentElement;
 
         var combat_data = SelectChoice(element);
+        var audio = new Audio('./assets/audio/ui.mp3');
+
+        audio.play();
 
         await Combat(combat_data);
         await Delay(2000);
+
         Reset(combat_data);
+
       }
 
     })
@@ -93,6 +99,11 @@ const Combat = async ({player,enemy}) => {
   await Delay(2000);
 
   var did_win = CheckDidPlayerWin(player,enemy);
+  var sound = did_win ? "win" : "lose";
+
+  var audio = new Audio(`./assets/audio/${sound}.mp3`);
+
+  audio.play();
 
   RenderResultWin(did_win,true);
 

@@ -1,4 +1,5 @@
 @keyframes result {
+
   0%{
     opacity: 0%;
   }
@@ -8,9 +9,11 @@
   100%{
     opacity: 0%;
   }
+
 }
 
-@keyframes result_background {
+@keyframes result_background_active {
+
   0%{
     height:0%;
     opacity:0;
@@ -19,9 +22,22 @@
     opacity:.7;
     height:100vh;
   }
+
+}
+
+@keyframes result_background {
+
+  0%{
+    opacity:.7;
+  }
+  100%{
+    opacity:0;
+  }
+
 }
 
 @keyframes score_player {
+
   0%{
     color:white;
     transform: scale(1) translateY(0px);
@@ -34,9 +50,11 @@
     color:white;
     transform: scale(1) translateY(0px);
   }
+
 }
 
 @keyframes score_enemy {
+
   0%{
     color:white;
     transform: scale(1) translateY(0px);
@@ -49,4 +67,5 @@
     color:white;
     transform: scale(1) translateY(0px);
   }
+
 }
