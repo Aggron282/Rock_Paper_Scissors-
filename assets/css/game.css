@@ -1,0 +1,59 @@
+.choice_container{
+  width:33%;
+  float:left;
+}
+
+.enemy_options{
+  top:0%;
+  width:50%;
+  right:-5%;
+}
+
+.player_options{
+  top:80%;
+  left:5%;
+  width:50%;
+}
+
+.choice_container img {
+  width:50%;
+  opacity:.2;
+  transition: all .5s;
+}
+
+.player_options .choice_container:hover img {
+  filter: invert(56%) sepia(39%) saturate(1523%) hue-rotate(178deg) brightness(105%) contrast(101%);
+  opacity:1;
+}
+
+.active_choice--player img{
+  transform: scale(1.5);
+  filter: invert(56%) sepia(39%) saturate(1523%) hue-rotate(178deg) brightness(105%) contrast(101%);
+  opacity:1;
+}
+
+.active_choice--enemy img{
+  transform: scale(1.5);
+  opacity:1;
+  filter: invert(46%) sepia(81%) saturate(1157%) hue-rotate(327deg) brightness(104%) contrast(101%);
+}
+
+.active_choice--enemy{
+  position: absolute;
+  top:100px;
+  opacity:1;
+  left:-150px;
+  transition: .3s all;
+}
+
+.active_choice--player{
+  position: absolute;
+  bottom:100px;
+  left:500px;
+  transition: .3s all;
+}
+
+.active_choice--enemy--temp img{
+  filter: brightness(0);
+  opacity:1;
+}

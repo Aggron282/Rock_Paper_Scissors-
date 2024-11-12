@@ -1,0 +1,52 @@
+@keyframes result {
+  0%{
+    opacity: 0%;
+  }
+  50%{
+    opacity: 100%;
+  }
+  100%{
+    opacity: 0%;
+  }
+}
+
+@keyframes result_background {
+  0%{
+    height:0%;
+    opacity:0;
+  }
+  100%{
+    opacity:.7;
+    height:100vh;
+  }
+}
+
+@keyframes score_player {
+  0%{
+    color:white;
+    transform: scale(1) translateY(0px);
+  }
+  50%{
+    color:cornflowerblue;
+    transform: scale(2) translateY(-20px);
+  }
+  0%{
+    color:white;
+    transform: scale(1) translateY(0px);
+  }
+}
+
+@keyframes score_enemy {
+  0%{
+    color:white;
+    transform: scale(1) translateY(0px);
+  }
+  50%{
+    color:orangered;
+    transform: scale(2) translateY(-20px);
+  }
+  0%{
+    color:white;
+    transform: scale(1) translateY(0px);
+  }
+}

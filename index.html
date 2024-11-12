@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/animations.css"/>
+    <link rel="stylesheet" type="text/css" href="./assets/css/index.css"/>
+    <link rel="stylesheet" type="text/css" href="./assets/css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="./assets/css/game.css"/>
+  </head>
+
+  <body>
+    <div class="game_container">
+
+      <div class="watermark_container">
+        <img class="watermark watermark--1"  src = "./assets/images/background_1.png"/>
+        <img class="watermark watermark--2"  src = "./assets/images/background_2.png"/>
+      </div>
+
+        <div class="start_container">
+
+            <p class="title"> Rock Paper Scissors </p>
+            <p class="subtitle"> Practice your skills!</p>
+
+            <button class="start_btn">
+              <div class="cover"></div>
+              <p>Start Game</p>
+            </button>
+
+        </div>
+
+        <div class="main_container">
+
+          <div class="vs_line" ></div>
+
+          <div class='result_background'></div>
+
+          <div class="result_container"></div>
+
+          <div class="scoreboard">
+            <div class="player_board board">
+              <p class="title"> Your Score </p>
+              <p class="subtitle" id = "player_score"> 0 </p>
+            </div>
+            <div class="enemy_board board">
+              <p class="title"> Opponent Score </p>
+              <p class="subtitle" id = "enemy_score"> 0 </p>
+            </div>
+          </div>
+
+          <div class="enemy_options options"></div>
+
+          <div class="player_options options"></div>
+
+        </div>
+
+    </div>
+
+    <script src = "./assets/js/game_data.js"></script>
+    <script src = "./assets/js/renderer.js"></script>
+    <script src = "./assets/js/game_engine.js"></script>
+    <script src = "./assets/js/start_game.js"></script>
+
+  </body>
+
+</html>

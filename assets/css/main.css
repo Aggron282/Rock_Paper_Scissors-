@@ -1,0 +1,150 @@
+.quit_btn{
+  width:10%;
+  right:45%;
+  top:20px;
+  background:none;
+  font-size:20px;
+  font-weight:600;
+  border:none;
+  visibility: hidden;
+  z-index:-99;
+  color:white;
+  position: absolute;
+}
+
+.quit_btn:hover .cover{
+  width:90%;
+}
+
+.quit_btn p {
+  position: relative;
+  z-index:99;
+}
+
+.quit_btn .cover {
+  background:none;
+  border-bottom:2px solid white;
+  width:0%;
+  transition: all .3s;
+  height:100%;
+  margin-top:-5px;
+  position:absolute;
+}
+
+.main_container{
+  transition: all .3s;
+}
+
+.start_container{
+  transition: all .3s;
+}
+
+.inactive{
+  opacity:0;
+  transform: translateY(1000px);
+}
+
+.scoreboard{
+  width:100%;
+  position: relative;
+  margin-top:-20%;
+  z-index:99;
+}
+
+.board{
+  position: absolute;
+  width:50%;
+  top:0%;
+}
+
+.board p{
+  font-family: monospace;
+  color:white;
+  text-align: center;
+}
+
+.board .title{
+  font-size:25px;
+}
+
+.vs_line{
+  transform: rotate(30deg);
+  height:3px;
+  background:white;
+  width:0%;
+  position: absolute;
+  left:-15%;
+  top:155%;
+  transition: all .5s;
+}
+
+.result_background--active{
+  height:100vh;
+  animation: .3s ease-in result_background 1;
+}
+
+.result_background{
+  width:100%;
+  background:black;
+  opacity:.5;
+  transition: .5s all;
+  z-index:2;
+  position: absolute;
+  left:0%;
+  top:0%;
+}
+
+.score_active--enemy{
+  animation:score_enemy 1s  ease-in 3;
+}
+
+.score_active--player{
+  animation:score_player 1s  ease-in 3;
+}
+
+.vs_line--active{
+  width:300%;
+}
+
+.winner-choice img{
+  transform:scale(1.5);
+}
+
+.board .subtitle{
+  font-size:20px;
+}
+
+.player_board{
+  left:-15%;
+}
+
+.enemy_board{
+  right:-15%;
+}
+
+.options{
+  position: absolute;
+  width:100%;
+}
+
+.lose{
+  color:orangered !important
+}
+
+.won{
+  color:cornflowerblue !important
+}
+
+.result{
+  font-size:50px;
+  font-family: monospace;
+  text-align:center;
+  color:white;
+  top:200px;
+  width:100%;
+  animation: result infinite 1s ease-in;
+  left:-5px;
+  font-weight: 800;
+  position: absolute;
+  z-index:99;
+}
