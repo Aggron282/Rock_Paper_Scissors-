@@ -1,3 +1,19 @@
+body{
+  background:linear-gradient(to left,#e05b46,#389CAF) !important;
+  overflow:hidden;
+}
+
+.main_container{
+  height:100vh;
+  width:100%;
+}
+
+.game_container{
+  position: relative;
+  width:100%;
+  height:100%;
+}
+
 .main_container{
   transition: all .3s;
 }
@@ -49,16 +65,16 @@
 
 .active_choice--enemy{
   position: absolute;
-  top:5%;
+  top:105%;
   opacity:1;
-  left:-5%;
+  left:-15%;
   transition: .3s all;
 }
 
 .active_choice--player{
   position: absolute;
-  bottom:5%;
-  left:50%;
+  bottom:60%;
+  left:85%;
   transition: .3s all;
 }
 

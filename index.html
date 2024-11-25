@@ -2,13 +2,14 @@
 <html lang="en" dir="ltr">
 
   <head>
+
     <meta charset="utf-8">
+
     <title>Rock Paper Scissors</title>
+
     <link rel="stylesheet" type="text/css" href="./assets/css/animations.css"/>
     <link rel="stylesheet" type="text/css" href="./assets/css/index.css"/>
-    <link rel="stylesheet" type="text/css" href="./assets/css/score.css"/>
-    <link rel="stylesheet" type="text/css" href="./assets/css/result.css"/>
-    <link rel="stylesheet" type="text/css" href="./assets/css/game.css"/>
+
   </head>
 
   <body>
@@ -24,44 +25,14 @@
             <p class="title"> Rock Paper Scissors </p>
             <p class="subtitle"> Practice your skills!</p>
 
-            <button class="start_btn">
+            <a href = "main.html"><button class="start_btn">
               <div class="cover"></div>
               <p>Start Game</p>
-            </button>
-
-        </div>
-
-        <div class="main_container">
-
-          <div class="vs_line" ></div>
-
-          <div class='result_background'></div>
-
-          <div class="result_container"></div>
-
-          <div class="scoreboard">
-            <div class="player_board board">
-              <p class="title"> Your Score </p>
-              <p class="subtitle" id = "player_score"> 0 </p>
-            </div>
-            <div class="enemy_board board">
-              <p class="title"> Opponent Score </p>
-              <p class="subtitle" id = "enemy_score"> 0 </p>
-            </div>
-          </div>
-
-          <div class="enemy_options options"></div>
-
-          <div class="player_options options"></div>
+            </button></a>
 
         </div>
 
     </div>
-
-    <script src = "./assets/js/game_data.js"></script>
-    <script src = "./assets/js/renderer.js"></script>
-    <script src = "./assets/js/game_engine.js"></script>
-    <script src = "./assets/js/start_game.js"></script>
 
   </body>
 
