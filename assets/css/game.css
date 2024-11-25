@@ -112,6 +112,23 @@ body{
 }
 
 
+@media screen and (min-width:1000px) and (min-width:1400px) and (orientation:landscape){
+
+  .vs_line{
+    transform: rotate(30deg);
+    height:3px;
+    background:white;
+    width:0%;
+    position: absolute;
+    left:-15%;
+    top:10%;
+    width:300%;
+    transition: all 1s;
+    opacity:0;
+  }
+
+}
+
 @media screen and (max-width:1000px) and (min-width:600px) and (orientation:portrait){
 
   .enemy_options{
