@@ -31,7 +31,7 @@ function RenderResultWin(didWin,isOn){
 
   var result_background = document.querySelector(".result_background")
 
-  var {class_,text} = GetClasses(didWin);
+  var {class_,text,background_class} = GetClasses(didWin);
 
   var html =( `
 
@@ -40,9 +40,10 @@ function RenderResultWin(didWin,isOn){
   );
 
   container.innerHTML = isOn ? html : "";
-
+  console.log(background_class)
   if(isOn){
     result_background.classList.add("result_background--active");
+    result_background.classList.add(background_class);
   }
   else{
     result_background.classList.remove("result_background--active");
@@ -53,21 +54,25 @@ function RenderResultWin(didWin,isOn){
 
     var text;
     var class_;
+    var background_class;
 
     if(didWin){
        text = "You Win!"
        class_ = "won"
+       background_class = "result_background--win"
     }
     else if(didWin == null){
       text = "It's a Tie!"
       class_ = "tie";
+      background_class = "result_background--tie"
     }
     else{
       text = "You Lost!"
       class_ = "lose"
+      background_class = "result_background--lose"
     }
 
-    return {text:text,class_:class_}
+    return {text:text,class_:class_,background_class:background_class}
 
   }
 

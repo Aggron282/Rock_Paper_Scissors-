@@ -12,6 +12,44 @@
 
 }
 
+@keyframes win_background{
+  0%{
+    background: black
+
+  }
+  50%{
+    background: black
+  }
+  100%{
+    background: lightblue
+  }
+}
+
+@keyframes tie_background{
+  0%{
+    background: black
+
+  }
+  50%{
+    background: black
+  }
+  100%{
+    background: limegreen
+  }
+}
+
+@keyframes lose_background{
+  0%{
+    background: black
+
+  }
+  50%{
+    background: black
+  }
+  100%{
+    background: orangered
+  }
+}
 @keyframes combat_player {
 
   0%{
