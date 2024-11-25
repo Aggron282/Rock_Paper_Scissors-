@@ -52,13 +52,13 @@ body{
 }
 
 .active_choice--player img{
-  transform: scale(1.5);
+  transform: scale(2);
   filter: invert(56%) sepia(39%) saturate(1523%) hue-rotate(178deg) brightness(105%) contrast(101%);
   opacity:1;
 }
 
 .active_choice--enemy img{
-  transform: scale(1.5);
+  transform: scale(2);
   opacity:1;
   filter: invert(46%) sepia(81%) saturate(1157%) hue-rotate(327deg) brightness(104%) contrast(101%);
 }
@@ -69,7 +69,6 @@ body{
   opacity:1;
   left:-15%;
   /* animation: 1 ease-in 1.2s combat_enemy; */
-
   transition: .3s all;
 }
 
@@ -97,7 +96,6 @@ body{
   position: absolute;
   bottom:60%;
   left:85%;
-
 }
 
 .active_choice--player img {
@@ -111,4 +109,30 @@ body{
 .active_choice--enemy--temp img{
   filter: brightness(0);
   opacity:1;
+}
+
+
+@media screen and (max-width:1000px) and (min-width:600px) and (orientation:portrait){
+
+  .enemy_options{
+    top:5%;
+    width:50%;
+  }
+
+  .active_choice--enemy{
+    position: absolute;
+    top:205%;
+    opacity:1;
+    left:-15%;
+    /* animation: 1 ease-in 1.2s combat_enemy; */
+    transition: .3s all;
+  }
+
+  .active_choice--player{
+    position: absolute;
+    bottom:200%;
+    left:85%;
+  }
+
+
 }
