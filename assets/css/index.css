@@ -127,4 +127,18 @@ body{
     width:100%;
   }
 
+  .watermark--1{
+    left:-25%;
+    width:100% !important;
+    bottom:-20%;
+    transform:rotate(40deg)
+  }
+
+  .watermark--2{
+    right:-20%;
+    top:-5%;
+    width:100% !important;
+    transform:rotate(120deg)
+  }
+
 }
