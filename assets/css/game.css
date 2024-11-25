@@ -113,7 +113,10 @@ body{
 
 
 @media screen and (min-width:1000px) and (min-width:1400px) and (orientation:landscape){
-
+  .enemy_options{
+    top:5%;
+    width:50%;
+  }
   .vs_line{
     transform: rotate(30deg);
     height:3px;

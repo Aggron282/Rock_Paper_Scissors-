@@ -34,6 +34,7 @@
 }
 
 @media screen and (max-width:1200px) and (min-width:600px) and (orientation:portrait){
+
   .player_board{
     left:5%;
   }
@@ -41,4 +42,5 @@
   .enemy_board{
     right:5%;
   }
+
 }
