@@ -26,16 +26,18 @@ var game_data = [
     loses: enums.Rock,
     wins: enums.Paper,
     id:enums.Scissor,
-  },
-]
+  }
 
+]
 
 function FindChoice(id){
 
-    for(var i =0; i < game_data.length; i++){
+  var data = [...game_data]
 
-      if(game_data[i].id == id){
-        return game_data[i]
+    for(var i =0; i < data.length; i++){
+
+      if(data[i].id == id){
+        return data[i]
       }
 
     }
@@ -51,6 +53,9 @@ function CheckDidPlayerWin(player,enemy){
 
     if(loses == id){
       return false;
+    }
+    else if (player.id == enemy.id){
+      return null
     }
     else{
       return true;

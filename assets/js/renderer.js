@@ -1,4 +1,3 @@
-
 const RenderOptions = (isPlayer) => {
 
   var html = "";
@@ -6,18 +5,21 @@ const RenderOptions = (isPlayer) => {
   var container = document.querySelector("."+container_query);
 
   for(var i = 0; i  < game_data.length; i++){
-    html += ReturnChoiceHTML(game_data[i])
+    html += ReturnChoiceHTML(game_data[i],isPlayer)
   }
 
   container.innerHTML = html;
 
 }
 
-function ReturnChoiceHTML(data){
+function ReturnChoiceHTML(data,isPlayer){
+
+  var unique = isPlayer ? "--player" : "--enemy";
+  var unique_id = data.id + unique;
 
   return (`
-    <div class="choice_container" _id = ${data.id}>
-      <img class ="choice_img" src = "./assets/images/${data.name}.png" _id = ${data.id} />
+    <div class="${"choice_container choice_container"+unique}" unique_id = ${unique_id} _id = ${data.id} >
+      <img class ="choice_img" _id = ${data.id} src = "./assets/images/${data.name}.png" unique_id = ${unique_id} />
     </div>
   `);
 
@@ -26,11 +28,16 @@ function ReturnChoiceHTML(data){
 function RenderResultWin(didWin,isOn){
 
   var container = document.querySelector(".result_container");
+
   var result_background = document.querySelector(".result_background")
 
   var {class_,text} = GetClasses(didWin);
 
-  var html =( `<div><p class="result ${class_}"> ${text} </p></div>`);
+  var html =( `
+    <div>
+      <p class="result ${class_}"> ${text} </p>
+    </div>`
+  );
 
   container.innerHTML = isOn ? html : "";
 
@@ -41,14 +48,23 @@ function RenderResultWin(didWin,isOn){
     result_background.classList.remove("result_background--active");
   }
 
+ // Inner function for Render Result Win
   function GetClasses(didWin){
 
-    var text = "Oops!"
-    var class_ = "lose"
+    var text;
+    var class_;
 
     if(didWin){
-       text = "Good Job!"
+       text = "You Win!"
        class_ = "won"
+    }
+    else if(didWin == null){
+      text = "It's a Tie!"
+      class_ = "tie";
+    }
+    else{
+      text = "You Lost!"
+      class_ = "lose"
     }
 
     return {text:text,class_:class_}
@@ -70,6 +86,10 @@ const HighlightElement = (element,highlight,active_class) => {
 
 async function SetScoreText(isPlayer){
 
+  if(isPlayer == null){
+    return;
+  }
+
   var id_root = "_score";
   var who = isPlayer ? "player" : "enemy";
 
@@ -81,7 +101,9 @@ async function SetScoreText(isPlayer){
 
   score_text.classList.add("score_active--"+who);
   score_text.innerHTML = score.toString();
+
   await Delay(3000);
+
   score_text.classList.remove("score_active--"+who);
 
 }

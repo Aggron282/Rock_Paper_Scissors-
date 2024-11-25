@@ -71,6 +71,26 @@ body{
   transition: .3s all;
 }
 
+.quit{
+  border:none;
+  border-bottom:2px dashed none;
+  color:white;
+  font-size:25px;
+  font-family: monospace;
+  transition: all .4s;
+  position: absolute;
+  right:5%;
+  background:none;
+  z-index: 9999999999;
+  bottom:5%;
+  opacity:.5;
+}
+
+.quit:hover{
+  opacity:1;
+  border-color:white;
+}
+
 .active_choice--player{
   position: absolute;
   bottom:60%;

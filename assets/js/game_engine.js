@@ -30,15 +30,21 @@ const ResetHighlights = (options,class_) => {
 const SelectChoice = (element) => {
 
   var _id = element.getAttribute("_id");
-  var player_choice = FindChoice(_id);
-  var enemy_choice = RandomizeEnemyChoice();
+
+  var player_choice = {...FindChoice(_id)};
   var class_ = active_choice + "enemy--temp";
   var options = enemy_options.querySelectorAll(".choice_container");
 
   player_choice.element = element;
 
   clearInterval(highlight_interval);
+
   ResetHighlights(options,class_);
+
+  var enemy_choice = RandomizeEnemyChoice();
+
+  console.log(enemy_choice.element)
+  console.log(player_choice.element)
 
   return {
     player:player_choice,
@@ -49,12 +55,24 @@ const SelectChoice = (element) => {
 
 const RandomizeEnemyChoice = () =>{
 
-  var choices_for_enemy = enemy_options.querySelectorAll(".choice_container");
+  var choice_all = document.querySelectorAll(".choice_container[unique_id]");
+  var choices_for_enemy = [];
+
+  for(var i =0; i < choice_all.length; i++){
+
+    if(choice_all[i].getAttribute("unique_id").includes("--enemy")){
+      choices_for_enemy.push(choice_all[i])
+    }
+
+  }
+
   var index = Math.floor(Math.random() * choices_for_enemy.length);
-  console.log(index)
+
   var enemy_choice_element = choices_for_enemy[index];
+
   var enemy_id = enemy_choice_element.getAttribute("_id");
-  var enemy_choice = FindChoice(enemy_id);
+
+  var enemy_choice = {...FindChoice(enemy_id)};
 
   enemy_choice.element = enemy_choice_element;
 
@@ -75,12 +93,11 @@ const AddEventsToPlayerChoice = () => {
         var element = e.target.parentElement;
 
         var combat_data = SelectChoice(element);
-        var audio = new Audio('./assets/audio/ui.mp3');
 
-        audio.play();
+        audio_player.play(audio_player.ui)
 
         await Combat(combat_data);
-        await Delay(2000);
+        await Delay(2000000);
 
         Reset(combat_data);
 
@@ -101,16 +118,16 @@ const Combat = async ({player,enemy}) => {
   var did_win = CheckDidPlayerWin(player,enemy);
   var sound = did_win ? "win" : "lose";
 
-  var audio = new Audio(`./assets/audio/${sound}.mp3`);
+  sound = did_win == null ? "tie" : did_win;
 
-  audio.play();
+  audio_player.play(sound);
 
   RenderResultWin(did_win,true);
 
   if(did_win){
     player_score++;
   }
-  else{
+  else if(did_win != null){
     enemy_score ++;
   }
 
@@ -143,3 +160,13 @@ const Reset = async ({player,enemy}) => {
   RenderResultWin(null,false);
 
 }
+
+
+const Init = () => {
+  RenderOptions(true);
+  RenderOptions(false);
+  HighlightEnemyOptions();
+  AddEventsToPlayerChoice();
+}
+
+Init();
