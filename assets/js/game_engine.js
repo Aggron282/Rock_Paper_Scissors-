@@ -74,6 +74,7 @@ const RandomizeEnemyChoice = () =>{
 
   var enemy_choice = {...FindChoice(enemy_id)};
 
+
   enemy_choice.element = enemy_choice_element;
 
   return enemy_choice;
@@ -97,7 +98,7 @@ const AddEventsToPlayerChoice = () => {
         audio_player.play(audio_player.ui)
 
         await Combat(combat_data);
-        await Delay(2000000);
+        await Delay(2000);
 
         Reset(combat_data);
 
