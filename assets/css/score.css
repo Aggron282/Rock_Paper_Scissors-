@@ -32,3 +32,13 @@
 .enemy_board{
   right:-15%;
 }
+
+@media screen and (max-width:1000px) and (min-width:600px) and (orientation:portrait){
+  .player_board{
+    left:-25%;
+  }
+
+  .enemy_board{
+    right:-25%;
+  }
+}
