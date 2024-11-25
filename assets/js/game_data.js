@@ -31,23 +31,31 @@ var game_data = [
 
 
 function FindChoice(id){
-  for(var i =0; i < game_data.length; i++){
 
-    if(game_data[i].id == id){
-      return game_data[i]
+    for(var i =0; i < game_data.length; i++){
+
+      if(game_data[i].id == id){
+        return game_data[i]
+      }
+
     }
-  }
-  return null;
+
+    return null;
+
 }
 
 function CheckDidPlayerWin(player,enemy){
-  var loses = player.loses;
-  var id = enemy.id;
-  if(loses == id){
-    return false;
-  }else{
-    return true;
-  }
+
+    var loses = player.loses;
+    var id = enemy.id;
+
+    if(loses == id){
+      return false;
+    }
+    else{
+      return true;
+    }
+
 }
 
 const Delay = (ms) => {

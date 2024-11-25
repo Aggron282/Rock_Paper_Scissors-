@@ -11,7 +11,7 @@ start_btn.addEventListener("click",(e)=>{
   StartGame();
 });
 
-const ToggleScreens = () =>{
+const ToggleScreens = (isPlaying_) =>{
 
   if(isPlaying){
     start_container.classList.add("inactive");
@@ -33,5 +33,5 @@ const StartGame = () => {
   HighlightEnemyOptions();
   AddEventsToPlayerChoice();
 }
-
+isPlaying = false;
 ToggleScreens();
