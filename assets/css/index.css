@@ -118,12 +118,13 @@ body{
     height:100%;
     background: none;
   }
+
   .game_container{
     width:100%;
   }
 
   .start_container {
-    margin-top:5%;
+    margin-top:20%;
     width:100%;
   }
 
