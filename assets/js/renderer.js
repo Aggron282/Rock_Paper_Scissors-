@@ -34,9 +34,9 @@ function RenderResultWin(didWin,isOn){
   var {class_,text} = GetClasses(didWin);
 
   var html =( `
-    <div>
+
       <p class="result ${class_}"> ${text} </p>
-    </div>`
+    `
   );
 
   container.innerHTML = isOn ? html : "";

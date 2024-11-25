@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'love';
+  src: url('./../fonts/love.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'speed';
+  src: url('./../fonts/speed.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'pixel';
+  src: url('./../fonts/speed.ttf');
+  font-weight: 200;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'mabar';
+  src: url('./../fonts/mabar.otf');
+  font-weight: normal;
+  font-style: normal;
+}

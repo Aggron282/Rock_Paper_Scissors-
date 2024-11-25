@@ -117,9 +117,9 @@ const Combat = async ({player,enemy}) => {
   await Delay(2000);
 
   var did_win = CheckDidPlayerWin(player,enemy);
-  var sound = did_win ? "win" : "lose";
+  var sound = did_win ? audio_player.win : audio_player.lose;
 
-  sound = did_win == null ? "tie" : did_win;
+  sound = did_win == null ? audio_player.tie : sound;
 
   audio_player.play(sound);
 
