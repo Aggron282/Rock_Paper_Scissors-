@@ -132,7 +132,7 @@ body{
 @media screen and (max-width:1000px) and (min-width:600px) and (orientation:portrait){
 
   .enemy_options{
-    top:5%;
+    top:10%;
     width:50%;
   }
 
