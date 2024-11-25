@@ -49,11 +49,11 @@
 }
 
 .score_active--enemy{
-  animation:score_enemy 1s  ease-in 3;
+  animation:score_enemy 2s  ease-in 1;
 }
 
 .score_active--player{
-  animation:score_player 1s  ease-in 3;
+  animation:score_player 2s  ease-in 1;
 }
 
 .winner-choice img{

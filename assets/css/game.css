@@ -68,6 +68,8 @@ body{
   top:105%;
   opacity:1;
   left:-15%;
+  /* animation: 1 ease-in 1.2s combat_enemy; */
+
   transition: .3s all;
 }
 
@@ -95,7 +97,15 @@ body{
   position: absolute;
   bottom:60%;
   left:85%;
-  transition: .3s all;
+
+}
+
+.active_choice--player img {
+  animation: combat_player 1s ease-in 1;
+}
+
+.active_choice--enemy img {
+  animation: combat_enemy 1s ease-in 1;
 }
 
 .active_choice--enemy--temp img{

@@ -6,7 +6,7 @@ var vs_line = document.querySelector(".vs_line");
 
 const HighlightEnemyOptions = () => {
 
-  var options = enemy_options.querySelectorAll(".choice_container");
+  var options = enemy_options.querySelectorAll(".choice_container--enemy");
   var class_ = active_choice + "enemy--temp";
 
   highlight_interval = setInterval(()=>{

@@ -12,6 +12,46 @@
 
 }
 
+@keyframes combat_player {
+
+  0%{
+    opacity:0;
+    transform: rotateZ(0) scale(.4);
+  }
+  40%{
+    opacity:0;
+  }
+  70%{
+    opacity:1;
+    transform: scale(2);
+
+  }
+  100%{
+    opacity:1;
+  }
+
+}
+
+@keyframes combat_enemy {
+  0%{
+    opacity:0;
+    transform: rotateZ(0) scale(.4);
+  }
+  20%{
+    opacity:0;
+    transform: rotateZ(0) scale(.1);
+  }
+  70%{
+    opacity:1;
+    transform: scale(4);
+  }
+  100%{
+    opacity:1;
+    transform: rotateZ(720deg) scale(1);
+  }
+
+}
+
 @keyframes result_background_active {
 
   0%{
@@ -42,11 +82,15 @@
     color:white;
     transform: scale(1) translateY(0px);
   }
-  50%{
+  30%{
     color:cornflowerblue;
-    transform: scale(2) translateY(-20px);
+    transform: scale(4) translateY(-20px) rotateY(360deg);
   }
-  0%{
+  70%{
+    color:cornflowerblue;
+    transform: scale(4) translateY(-20px) rotateY(360deg);
+  }
+  100%{
     color:white;
     transform: scale(1) translateY(0px);
   }
@@ -59,9 +103,14 @@
     color:white;
     transform: scale(1) translateY(0px);
   }
-  50%{
+  30%{
+    transform: scale(4) translateY(-20px) rotateY(360deg);
     color:orangered;
-    transform: scale(2) translateY(-20px);
+  }
+
+  70%{
+    color:orangered;
+    transform: scale(4) translateY(-20px) rotateY(360deg);
   }
   0%{
     color:white;
