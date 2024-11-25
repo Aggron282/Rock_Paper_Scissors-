@@ -1,8 +1,8 @@
 const StartGame = () => {
-  audio_player.play(audio_player.ui);
+  audio_player.play(audio_player.quit);
   setTimeout(()=>{
     window.location.assign("main.html");
-  },500)
+  },1000)
 }
 
 const QuitGame = () => {
