@@ -114,7 +114,7 @@ body{
 
 @media screen and (min-width:1000px) and (min-width:1400px) and (orientation:landscape){
   .enemy_options{
-    top:10%;
+    top:15%;
     width:50%;
   }
   .vs_line{
@@ -124,7 +124,7 @@ body{
     width:0%;
     position: fixed;
     left:-15%;
-    top:10%;
+    top:-40%;
     width:300%;
     transition: all 1s;
     opacity:0;
@@ -135,15 +135,14 @@ body{
 @media screen and (max-width:1000px) and (min-width:600px) and (orientation:portrait){
 
   .enemy_options{
-    top:10%;
+    top:15%;
     width:50%;
   }
 
   .player_options{
-    top:90%;
+    top:95%;
     width:50%;
   }
-
 
   .vs_line{
     transform: rotate(30deg);
@@ -152,7 +151,7 @@ body{
     width:0%;
     position: fixed;
     left:-15%;
-    top:-200%;
+    top:-100%;
     width:300%;
     transition: all 1s;
     opacity:0;
@@ -161,7 +160,7 @@ body{
 
   .active_choice--enemy{
     position: absolute;
-    top:350%;
+    top:350px;
     opacity:1;
     left:-15%;
     /* animation: 1 ease-in 1.2s combat_enemy; */
@@ -170,7 +169,7 @@ body{
 
   .active_choice--player{
     position: absolute;
-    bottom:350%;
+    bottom:350px;
     left:85%;
   }
 
