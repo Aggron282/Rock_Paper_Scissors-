@@ -124,7 +124,7 @@ body{
     width:0%;
     position: fixed;
     left:-15%;
-    top:-40%;
+    top:100px;
     width:300%;
     transition: all 1s;
     opacity:0;
@@ -156,7 +156,6 @@ body{
     transition: all 1s;
     opacity:0;
   }
-
 
   .active_choice--enemy{
     position: absolute;
