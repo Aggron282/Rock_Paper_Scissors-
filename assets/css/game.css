@@ -114,7 +114,7 @@ body{
 
 @media screen and (min-width:1000px) and (min-width:1400px) and (orientation:landscape){
   .enemy_options{
-    top:5%;
+    top:10%;
     width:50%;
   }
   .vs_line{
@@ -139,14 +139,20 @@ body{
     width:50%;
   }
 
+  .player_options{
+    top:90%;
+    width:50%;
+  }
+
+
   .vs_line{
     transform: rotate(30deg);
     height:3px;
     background:white;
     width:0%;
-    position: absolute;
+    position: fixed;
     left:-15%;
-    top:-70%;
+    top:-200%;
     width:300%;
     transition: all 1s;
     opacity:0;
