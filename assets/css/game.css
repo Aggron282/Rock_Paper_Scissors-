@@ -139,9 +139,23 @@ body{
     width:50%;
   }
 
+  .vs_line{
+    transform: rotate(30deg);
+    height:3px;
+    background:white;
+    width:0%;
+    position: absolute;
+    left:-15%;
+    top:-70%;
+    width:300%;
+    transition: all 1s;
+    opacity:0;
+  }
+
+
   .active_choice--enemy{
     position: absolute;
-    top:405%;
+    top:350%;
     opacity:1;
     left:-15%;
     /* animation: 1 ease-in 1.2s combat_enemy; */
@@ -150,7 +164,7 @@ body{
 
   .active_choice--player{
     position: absolute;
-    bottom:400%;
+    bottom:350%;
     left:85%;
   }
 
