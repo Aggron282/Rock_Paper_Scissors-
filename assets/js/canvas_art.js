@@ -115,6 +115,11 @@ canvas.addEventListener("mousemove",(e)=>{
   mouse.y = e.y;
 });
 
+canvas.addEventListener("ondrag",(e)=>{
+  mouse.x = e.x;
+  mouse.y = e.y;
+});
+
 canvas.addEventListener("resize",(e)=>{
   init();
 });
