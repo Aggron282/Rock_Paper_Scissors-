@@ -124,7 +124,7 @@ body{
     width:0%;
     position: fixed;
     left:-15%;
-    top:100px;
+    top:-100px;
     width:300%;
     transition: all 1s;
     opacity:0;
