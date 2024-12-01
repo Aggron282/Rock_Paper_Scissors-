@@ -149,6 +149,19 @@ html, body {
     width:50%;
   }
 
+  .vs_line{
+    transform: rotate(30deg);
+    height:3px;
+    background:white;
+    width:0%;
+    position: fixed;
+    left:-15%;
+    top:-100px !important;
+    width:300%;
+    transition: all 1s;
+    opacity:0;
+  }
+
   .player_options{
     top:90%;
     width:50%;
