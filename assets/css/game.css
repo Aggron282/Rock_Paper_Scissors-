@@ -128,16 +128,10 @@ html, body {
   }
 
   .vs_line{
-    transform: rotate(30deg);
-    height:3px;
-    background:white;
-    width:0%;
+    width:0% !important;
     position: fixed !important;
-    left:-15%;
-    top:-100px !important;
-    width:300%;
-    transition: all 1s;
     opacity:0;
+    height:0px !important;
   }
 
 }
@@ -150,16 +144,10 @@ html, body {
   }
 
   .vs_line{
-    transform: rotate(30deg);
-    height:3px;
-    background:white;
-    width:0%;
+    width:0% !important;
     position: fixed !important;
-    left:-15%;
-    top:-100px !important;
-    width:300%;
-    transition: all 1s;
     opacity:0;
+    height:0px !important;
   }
 
   .player_options{
