@@ -8,6 +8,7 @@ html, body {
     height: 100%;
     background:linear-gradient(to left,#e05b46,#389CAF);
     overflow:hidden;
+    padding:0px !important;
 }
 
 .main_container{
@@ -149,7 +150,7 @@ html, body {
   }
 
   .player_options{
-    top:95%;
+    top:90%;
     width:50%;
   }
 
