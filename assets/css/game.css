@@ -146,6 +146,10 @@ html, body {
     font-size:65px;
   }
 
+  .player_options, .enemy_options{
+    width:95%;
+  }
+
 }
 
 @media screen and (max-width:1000px) and (min-width:600px) and (orientation:portrait){
