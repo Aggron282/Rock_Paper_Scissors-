@@ -136,6 +136,18 @@ html, body {
 
 }
 
+@media screen (max-width:690px) and (orientation:portrait){
+
+  .board .subtitle{
+    font-size:50px;
+  }
+
+  .board .title{
+    font-size:65px;
+  }
+
+}
+
 @media screen and (max-width:1000px) and (min-width:600px) and (orientation:portrait){
 
 
