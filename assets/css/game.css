@@ -138,6 +138,11 @@ html, body {
 
 @media screen and (max-width:1000px) and (min-width:600px) and (orientation:portrait){
 
+
+.player_options, .enemy_options{
+  width:75%;
+}
+
   .enemy_options{
     top:5%;
     width:50%;
