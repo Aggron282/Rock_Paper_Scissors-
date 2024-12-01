@@ -113,6 +113,36 @@ body{
 }
 
 
+@media screen (min-width:690px) and (orientation:portrait){
+  .watermark--1{
+    left:-25%;
+    width:140% !important;
+    bottom:-20%;
+  }
+
+  .watermark--2{
+    right:-20%;
+    top:-5%;
+    width:140% !important;
+  }
+
+  .start_container .subtitle {
+    font-size:60px;
+    margin-top:-30px;
+  }
+
+  .start_container .title {
+    font-weight:900;
+    font-size:90px;
+    margin-top:5%;
+  }
+
+  .start_btn{
+    font-size:60px;
+  }
+
+}
+
 @media screen and (max-width:1200px) and (min-width:600px) and (orientation:portrait){
 
   #intro-canvas{
