@@ -132,7 +132,7 @@ html, body {
     height:3px;
     background:white;
     width:0%;
-    position: fixed;
+    position: fixed !important;
     left:-15%;
     top:-100px !important;
     width:300%;
@@ -154,7 +154,7 @@ html, body {
     height:3px;
     background:white;
     width:0%;
-    position: fixed;
+    position: fixed !important;
     left:-15%;
     top:-100px !important;
     width:300%;
