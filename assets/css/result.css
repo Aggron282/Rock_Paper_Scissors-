@@ -41,7 +41,7 @@
   opacity:0;
   transition: .5s all;
   z-index:2;
-  position: absolute;
+  position: fixed;
   left:0%;
   top:0%;
   height:0%;
@@ -52,7 +52,7 @@
   height:3px;
   background:white;
   width:0%;
-  position: absolute;
+  position: fixed;
   left:-15%;
   top:155%;
   width:300%;
