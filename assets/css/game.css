@@ -136,6 +136,12 @@ html, body {
 
 }
 
+@media screen and (min-width:691px) and (max-width:1000px) (orientation:landscape){
+  html,body{
+    width:100%;
+  }
+}
+
 @media screen (max-width:690px) and (orientation:portrait){
 
   .board .subtitle{
@@ -163,7 +169,6 @@ html, body {
 
   .quit{
     font-size:45px;
-
   }
 
 

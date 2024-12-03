@@ -120,20 +120,24 @@ body{
     bottom:-20%;
   }
 
+
+.start_container{
+  margin-top:12.5%;
+}
   .watermark--2{
     right:-20%;
     top:-5%;
     width:140% !important;
   }
 
-  .start_container .subtitle {
-    font-size:60px;
+.subtitle {
+    font-size:50px;
     margin-top:-30px;
   }
 
-  .start_container .title {
+ .title {
     font-weight:900;
-    font-size:90px;
+    font-size:60px;
     margin-top:5%;
   }
 
