@@ -150,6 +150,23 @@ html, body {
     width:95%;
   }
 
+  .title{
+    font-size:60px;
+  }
+  .subtitle{
+    font-size:40px;
+  }
+
+  .player_options, .enemy_options{
+    width:85%;
+  }
+
+  .quit{
+    font-size:45px;
+
+  }
+
+
 }
 
 @media screen and (max-width:1000px) and (min-width:600px) and (orientation:portrait){

@@ -18,22 +18,6 @@
   transition: all .4s;
 }
 
-/* .result_background--win{
-  animation: win_background .4s ease-in 1 !important;
-  background:lightblue !important;
-}
-
-.result_background--tie{
-  animation: tie_background .4s ease-in 1 !important;
-  background:limegreen !important;
-
-}
-
-.result_background--lose{
-  animation: lose_background .4s ease-in 1 !important;
-  background:orangered !important;
-} */
-
 .result_background{
   width:100%;
   animation: .3s ease-in result_background 1;
