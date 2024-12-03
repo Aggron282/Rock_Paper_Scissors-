@@ -177,15 +177,15 @@ body{
 
   .watermark--1{
     left:-25%;
-    width:100% !important;
-    bottom:-20%;
+    width:140% !important;
+    bottom:-10%;
     transform:rotate(40deg)
   }
 
   .watermark--2{
     right:-20%;
     top:-5%;
-    width:100% !important;
+    width:130% !important;
     transform:rotate(120deg)
   }
   .start_btn{
