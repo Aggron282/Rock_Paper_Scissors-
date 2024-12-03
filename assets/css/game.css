@@ -227,9 +227,9 @@ html, body {
 
   .active_choice--enemy{
     position: absolute;
-    top:350px;
+    top:325px;
     opacity:1;
-    left:35%;
+    left:32.5%;
     /* animation: 1 ease-in 1.2s combat_enemy; */
     transition: .3s all;
   }
