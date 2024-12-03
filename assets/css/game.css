@@ -136,10 +136,16 @@ html, body {
 
 }
 
-@media screen and (min-width:691px) and (max-width:1000px) (orientation:landscape){
+@media screen and (min-width:691px) and (max-width:1200px) (orientation:landscape){
 
   html,body{
     width:100%;
+  }
+
+  .vs_line{
+    position: fixed;
+    opacity: 0;
+    visibility: hidden;
   }
 
 }
@@ -184,6 +190,12 @@ html, body {
   width:90%;
 }
 
+
+  .quit{
+    font-size:45px;
+  }
+
+
   .enemy_options{
     top:5%;
   }
@@ -196,7 +208,7 @@ html, body {
   }
 
   .player_options{
-    top:80%;
+    top:75%;
     left:10%;
   }
 
