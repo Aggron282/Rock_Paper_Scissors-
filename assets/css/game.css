@@ -137,9 +137,11 @@ html, body {
 }
 
 @media screen and (min-width:691px) and (max-width:1000px) (orientation:landscape){
+
   html,body{
     width:100%;
   }
+
 }
 
 @media screen (max-width:790px) and (orientation:portrait){
@@ -159,6 +161,7 @@ html, body {
   .title{
     font-size:60px;
   }
+  
   .subtitle{
     font-size:40px;
   }

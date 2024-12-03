@@ -116,29 +116,29 @@ body{
 @media screen (max-width:790px) and (orientation:portrait){
   .watermark--1{
     left:-25%;
-    width:140% !important;
+    width:200% !important;
     bottom:-20%;
   }
 
 
   .start_container{
-    margin-top:12.5%;
+    margin-top:15% !important;
   }
 
   .watermark--2{
     right:-20%;
     top:-5%;
-    width:140% !important;
+    width:200% !important;
   }
 
 .subtitle {
-    font-size:50px;
+    font-size:50px !important;
     margin-top:-30px;
   }
 
  .title {
     font-weight:900;
-    font-size:60px;
+    font-size:60px !important;
     margin-top:5%;
   }
 
