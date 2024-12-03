@@ -160,9 +160,19 @@ body{
     background: none;
   }
 
+  .start_container{
+    margin-top:10%;
+  }
+
+
+  .title {
+     font-weight:900;
+     font-size:60px;
+     margin-top:5%;
+   }
 
   .subtitle {
-      font-size:50px;
+      font-size:50px !important;
       margin-top:-10px;
     }
 
@@ -178,7 +188,7 @@ body{
   .watermark--1{
     left:-25%;
     width:140% !important;
-    bottom:-10%;
+    bottom:-15%;
     transform:rotate(40deg)
   }
 
