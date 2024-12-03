@@ -113,7 +113,7 @@ body{
 }
 
 
-@media screen (max-width:690px) and (orientation:portrait){
+@media screen (max-width:790px) and (orientation:portrait){
   .watermark--1{
     left:-25%;
     width:140% !important;

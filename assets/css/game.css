@@ -142,7 +142,7 @@ html, body {
   }
 }
 
-@media screen (max-width:690px) and (orientation:portrait){
+@media screen (max-width:790px) and (orientation:portrait){
 
   .board .subtitle{
     font-size:50px;
