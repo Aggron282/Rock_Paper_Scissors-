@@ -43,4 +43,12 @@
     right:5%;
   }
 
+  .board .subtitle{
+    font-size:45px;
+  }
+
+  .board .title{
+    font-size:50px;
+  }
+
 }

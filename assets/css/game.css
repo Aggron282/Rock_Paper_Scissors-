@@ -161,7 +161,7 @@ html, body {
   .title{
     font-size:60px;
   }
-  
+
   .subtitle{
     font-size:40px;
   }
@@ -181,12 +181,11 @@ html, body {
 
 
 .player_options, .enemy_options{
-  width:75%;
+  width:90%;
 }
 
   .enemy_options{
     top:5%;
-    width:50%;
   }
 
   .vs_line{
@@ -197,8 +196,8 @@ html, body {
   }
 
   .player_options{
-    top:85%;
-    width:50%;
+    top:80%;
+    left:10%;
   }
 
   .vs_line{
