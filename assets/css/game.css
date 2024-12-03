@@ -229,7 +229,7 @@ html, body {
     position: absolute;
     top:350px;
     opacity:1;
-    left:-15%;
+    left:35%;
     /* animation: 1 ease-in 1.2s combat_enemy; */
     transition: .3s all;
   }
@@ -237,7 +237,7 @@ html, body {
   .active_choice--player{
     position: absolute;
     bottom:350px;
-    left:85%;
+    left:35%;
   }
 
 }
