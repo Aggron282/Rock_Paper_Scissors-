@@ -7,7 +7,7 @@ html, body {
     margin: 0;
     height: 100%;
     background:linear-gradient(to left,#e05b46,#389CAF);
-    overflow:hidden;
+    overflow-x:hidden;
     padding:0px !important;
 }
 
